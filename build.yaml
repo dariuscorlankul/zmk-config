@@ -17,6 +17,22 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
----
+
 include:
-  - board: ferris_rev02
+  # 1. The Dongle (Central Brain)
+  # Uses the left matrix, but is commanded to look for 2 wireless halves
+  - board: nice_nano_v2
+    shield: ferris_sweep_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS=2
+    artifact-name: dongle_firmware
+
+  # 2. The Left Half (Physical Transmitter)
+  # The "peripheral" tag strips the brain code out
+  - board: nice_nano_v2
+    shield: ferris_sweep_left peripheral
+    artifact-name: left_peripheral_firmware
+
+  # 3. The Right Half (Physical Transmitter)
+  - board: nice_nano_v2
+    shield: ferris_sweep_right peripheral
+    artifact-name: right_peripheral_firmware
