@@ -19,29 +19,27 @@
 
 
 &kscan0 {
-    input-gpios
-        = <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 0  | Top Row, Pinky (Q)
-        , <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 1  | Top Row, Ring (W)
-        , <&gpio1 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 2  | Top Row, Middle (F)
-        , <&gpio1 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 3  | Top Row, Index (P)
-        , <&gpio0 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 4  | Top Row, Inner Index (B)
-
-        , <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 5  | Home Row, Pinky (A)
-        , <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 6  | Home Row, Ring (R)
-        , <&gpio0 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 7  | Home Row, Middle (S)
-        , <&gpio0 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 8  | Home Row, Index (T)
-        , <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 9  | Home Row, Inner Index (G)
-
-        , <&gpio0 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 10 | Bottom Row, Pinky (Z)
-        , <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 11 | Bottom Row, Ring (X)
-        , <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 12 | Bottom Row, Middle (C)
-        , <&gpio1 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 13 | Bottom Row, Index (D)
-        , <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 14 | Bottom Row, Inner Index (V)
-
-        , <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 15 | Outer Thumb Key (Num)
-        , <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 16 | Inner Thumb Key (Space)
+        input-gpios
+        = <&pro_micro  7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro  1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro  3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro  4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro  5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro  8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro  9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         ;
 };
+
 
 &lt { quick-tap-ms = <200>; };
 
