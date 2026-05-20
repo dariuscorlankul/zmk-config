@@ -17,7 +17,6 @@
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
-#if IS_ENABLED(CONFIG_SHIELD_CRADIO_LEFT)
 
 &kscan0 {
     input-gpios
@@ -43,8 +42,6 @@
         , <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 16 | Inner Thumb Key (Space)
         ;
 };
-
-#endif
 
 &lt { quick-tap-ms = <200>; };
 
