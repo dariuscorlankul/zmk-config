@@ -25,9 +25,9 @@
             , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 3  | Top Row, Index        (Left: P / Right: Y)
             , <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 4  | Top Row, Inner Index  (Left: B / Right: SQT)
 
-            , <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 5  | Home Row, Pinky       (Left: A / Right: M)
+            , <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 5  | Home Row, Pinky       (Left: A / Right: M)
             , <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 6  | Home Row, Ring         (Left: R / Right: N)
-            , <&gpio1 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 7  | Home Row, Middle       (Left: S / Right: E)
+            , <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 7  | Home Row, Middle       (Left: S / Right: E)
             , <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 8  | Home Row, Index        (Left: T / Right: I)
             , <&gpio0 06 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 9  | Home Row, Inner Index  (Left: G / Right: O)
 
@@ -69,7 +69,7 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P       &kp T        &kp J       &kp L  &kp U      &kp Y    &kp SQT
+&kp Q  &kp W  &kp F  &kp P       &kp B        &kp J       &kp L  &kp U      &kp Y    &kp SQT
 &kp A  &kp R  &kp S  &kp T       &kp G        &kp M       &kp N  &kp E      &kp I    &kp O
 &kp Z  &kp X  &kp C  &kp D       &kp V        &kp K       &kp M  &kp COMMA  &kp DOT  &kp FSLH
                      &num_layer  &kp SPACE    &kp RSHIFT  &mo 1
