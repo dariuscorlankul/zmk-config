@@ -17,7 +17,7 @@
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
-&kscan0 u{
+&kscan0 {
     input-gpios
         = <&gpio0 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 0
         , <&gpio0 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 1
