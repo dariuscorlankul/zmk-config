@@ -20,24 +20,24 @@
 #if IS_ENABLED(CONFIG_SHIELD_CRADIO_LEFT)
 
 &kscan0 {
-        input-gpios
-        = <&pro_micro  7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro  1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro  3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro  4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro  5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro  8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro  9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+    input-gpios
+        = <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 0  (Old Pro_Micro 7)
+        , <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 1  (Old Pro_Micro 18)
+        , <&gpio1 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 2  (Old Pro_Micro 19)
+        , <&gpio1 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 3  (Old Pro_Micro 20)
+        , <&gpio0 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 4  (Old Pro_Micro 21)
+        , <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 5  (Old Pro_Micro 14)
+        , <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 6  (Old Pro_Micro 16)
+        , <&gpio0 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 7  (Old Pro_Micro 1)
+        , <&gpio0 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 8  (Old Pro_Micro 2)
+        , <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 9  (Old Pro_Micro 3)
+        , <&gpio0 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 10 (Old Pro_Micro 4)
+        , <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 11 (Old Pro_Micro 5)
+        , <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 12 (Old Pro_Micro 6)
+        , <&gpio1 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 13 (Old Pro_Micro 8)
+        , <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 14 (Old Pro_Micro 9)
+        , <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 15 (Old Pro_Micro 10)
+        , <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // Key 16 (Old Pro_Micro 11)
         ;
 };
 
