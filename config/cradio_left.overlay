@@ -1,8 +1,8 @@
 #include <dt-bindings/gpio/gpio.h>
 / {
-    &kscan0 kscan{
+    kscan0 kscan{
             compatible = "zmk,kscan-gpio-direct"
-            
+
             input-gpios
                 = <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 0  | Top Row, Pinky       (Left: Q / Right: J)
                 , <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 1  | Top Row, Ring         (Left: W / Right: L)
