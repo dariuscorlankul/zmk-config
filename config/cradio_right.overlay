@@ -1,7 +1,6 @@
 #include <dt-bindings/gpio/gpio.h>
 
-/ {
-    kscan0: kscan {
+    &kscan0: kscan {
             compatible = "zmk,kscan-gpio-direct";
 
             input-gpios
@@ -27,4 +26,3 @@
                 , <&gpio1 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Index 16 | Thumb Key, Inner       (Left: Space / Right: Sym)
                 ;
     };
-};
