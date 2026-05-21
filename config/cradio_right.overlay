@@ -1,19 +1,15 @@
 #include <dt-bindings/gpio/gpio.h>
 
 / {
-    // 1. Tell ZMK to use our custom matrix
-    chosen {
-        zmk,kscan = &custom_right_kscan;
-    };
-
-    // 2. Kill the default matrix by its path (no label needed!) so it stops ghosting
+    // Target the existing default matrix by its path (no labels needed).
+    // This keeps its links alive so the physical layout doesn't crash!
     kscan {
-        status = "disabled";
-    };
-
-    // 3. Our custom matrix runs cleanly by itself
-    custom_right_kscan: custom_kscan {
         compatible = "zmk,kscan-gpio-direct";
+        
+        // Nuke the default Cradio matrix properties so they don't cause ghosting or conflicts
+        /delete-property/ row-gpios;
+        /delete-property/ col-gpios;
+        /delete-property/ diode-direction;
         
         input-gpios
             = <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 0  | Top Row, Pinky       (Right: J)
@@ -38,4 +34,4 @@
             , <&gpio1 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Index 16 | Thumb Key, Inner       (Right: Sym)
             ;
     };
-};;
+};;;
