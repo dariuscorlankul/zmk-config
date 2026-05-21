@@ -27,4 +27,4 @@
                 , <&gpio1 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Index 16 | Thumb Key, Inner       (Left: Space / Right: Sym)
                 ;
     };
-};;
+};
