@@ -1,5 +1,6 @@
 #include "cradio.keymap"
 
+
 &kscan0 {
     input-gpios
         = <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Index 0  | Top Row, Pinky       (Left: Q / Right: J)
